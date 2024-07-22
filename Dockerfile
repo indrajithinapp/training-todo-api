@@ -1,6 +1,10 @@
 # Use the official Crystal image as the base image
 FROM crystallang/crystal:latest
 
+RUN apt-get update && apt-get install -y \
+    libsqlite3-dev \
+    && apt-get clean
+
 # Set the working directory in the container
 WORKDIR /app
 
