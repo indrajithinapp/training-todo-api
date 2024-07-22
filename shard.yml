@@ -1,0 +1,21 @@
+name: training-todo-api
+version: 0.1.0
+
+authors:
+  - Indrajith K L <indrajith@inapp.com>
+
+targets:
+  training-todo-api:
+    main: src/training-todo-api.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+  jwt:
+    github: crystal-community/jwt
+  sqlite3:
+    github: crystal-lang/crystal-sqlite3
+
+crystal: '>= 1.13.1'
+
+license: MIT
